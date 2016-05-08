@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>test</title>
+    </head>
+    <body>
+        <h1>Hello django!</h1>
+        <strong>
+            autor is {{ name }}!
+        </strong>
+        <div>
+            {% for ele in post %}
+                <p>{{ ele.title }}&nbsp;&nbsp;{{ ele.category }}-----{{ ele.content }}</p>
+            {% endfor %}
+        </div>
+    </body>
+</html>
